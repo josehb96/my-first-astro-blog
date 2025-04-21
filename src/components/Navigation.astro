@@ -1,3 +1,22 @@
-<a href="/">Home</a>
-<a href="/about">About</a>
-<a href="/blog">Blog</a>
+<button class="nav-toggle" aria-label="Toggle navigation">
+  <span class="icon">☰</span>
+  <span class="text">Menu</span>
+</button>
+<div class="nav-links">
+  <a href="/">Home</a>
+  <a href="/about">About</a>
+  <a href="/blog">Blog</a>
+</div>
+
+<script>
+  const toggleButton = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  if (toggleButton) {
+    toggleButton.addEventListener('click', () => {
+      if (navLinks) {
+        navLinks.classList.toggle('expanded');
+      }
+    });
+  }
+</script>
