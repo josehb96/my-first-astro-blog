@@ -1,6 +1,6 @@
 <button class="nav-toggle" aria-label="Toggle navigation">
-  <span class="icon">☰</span>
-  <span class="text">Menu</span>
+  <span>☰</span>
+  <span>Menu</spans=>
 </button>
 <div class="nav-links">
   <a href="/">Home</a>
@@ -20,3 +20,18 @@
     });
   }
 </script>
+
+<style>
+  .nav-toggle {
+    color: white;
+    background-color: #4c1d95;
+    cursor: pointer;
+  }
+
+  @media screen and (min-width: 636px) {
+    .nav-toggle {
+      display: none;
+    }
+  }
+
+</style>
