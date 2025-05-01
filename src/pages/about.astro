@@ -16,7 +16,8 @@ const happy = true;
 const finished = true;
 const goal = 3;
 
-const skillColor = "navy";
+const skillColorLight = "navy";
+const skillColorDark = "white";
 const fontWeight = "bold";
 const textCase = "uppercase";
 ---
@@ -48,10 +49,15 @@ const textCase = "uppercase";
   {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
 </BaseLayout>
 
-<style is:global define:vars={{ skillColor, fontWeight, textCase }}>
+<style is:global define:vars={{ skillColorLight, skillColorDark, fontWeight, textCase }}>
   .skill {
-    color: var(--skillColor);
+    color: var(--skillColorLight);
     font-weight: var(--fontWeight);
     text-transform: var(--textCase);
   }
+
+  .dark .skill {
+    color: var(--skillColorDark);
+  }
+
 </style>
