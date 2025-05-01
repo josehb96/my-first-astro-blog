@@ -63,6 +63,10 @@ h1 {
   color: #fff;
 }
 
+.dark li a {
+  color: #ff9776;
+}
+
 .nav-links a:hover,
 .nav-links a:focus {
   background-color: #ff9776;
